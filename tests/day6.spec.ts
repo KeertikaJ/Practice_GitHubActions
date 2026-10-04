@@ -1,5 +1,5 @@
 import { test } from "@playwright/test"
-
+//My feature baranch
 test("Handling Drop Down", async ({ page }) => {
     await page.goto("https://leaftaps.com/opentaps/control/main");
     await page.locator('//input[@id="username"]').fill("democsr2");
@@ -8,7 +8,6 @@ test("Handling Drop Down", async ({ page }) => {
     await page.locator('//a[contains(text(),"CRM")]').click();
     await page.locator('//a[text()="Leads"]').click();
     await page.locator('//a[text()="Create Lead"]').click();
-    
     await page.locator('//input[@id="createLeadForm_companyName"]').fill("Testleaf");
     await page.locator('//input[@id="createLeadForm_firstName"]').fill("Keertika");
     await page.locator('//input[@id="createLeadForm_lastName"]').fill("J");
