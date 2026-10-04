@@ -8,6 +8,7 @@ test("Handling Drop Down", async ({ page }) => {
     await page.locator('//a[contains(text(),"CRM")]').click();
     await page.locator('//a[text()="Leads"]').click();
     await page.locator('//a[text()="Create Lead"]').click();
+    
     await page.locator('//input[@id="createLeadForm_companyName"]').fill("Testleaf");
     await page.locator('//input[@id="createLeadForm_firstName"]').fill("Keertika");
     await page.locator('//input[@id="createLeadForm_lastName"]').fill("J");
